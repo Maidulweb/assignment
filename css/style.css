@@ -454,7 +454,7 @@ input:checked + .slider:before {
 		 border: none;
 		 outline: none;
 	}
-	}
+	
 	
 	 span.toggle {
 		 background: #fff;
