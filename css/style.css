@@ -426,14 +426,25 @@ input:checked + .slider:before {
 .dis-none {
 	display: none;
 }
-
-
+.mobile-star {
+	display: none;
+}
 @media only screen and (max-width: 768px) {
 	 header {
 		 background: #fff;
 	}
 	 .wrapper {
 		 float: inherit;
+		 position: relative;
+	}
+	.mobile-star {
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 40%;
+	}
+	.mo-co {
+		color: #4F4F4F;
 	}
 	 .nav-toggle {
 		 cursor: pointer;
@@ -443,6 +454,8 @@ input:checked + .slider:before {
 		 border: none;
 		 outline: none;
 	}
+	}
+	
 	 span.toggle {
 		 background: #fff;
 		 width: 30px;
