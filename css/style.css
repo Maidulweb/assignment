@@ -142,7 +142,7 @@ span {
  .wrapper .logo {
 	 float: left;
 	 margin: 0;
-	 padding: 9px 0 0 10px;
+	 padding: 9px 0 0 0px;
 }
 .navbar {
 	padding-top: 8px;
@@ -303,13 +303,13 @@ padding-bottom: 5px;
 	border-top: 1px solid #d8d4d4;
     border-bottom: 1px solid #d8d4d4;
     border-left: 1px solid #d8d4d4;
-    padding: 5px 4px 8px 5px;
+    padding: 6px 4px 9px 5px;
 }
 .ext-input i {
 	border-top: 1px solid #d8d4d4;
     border-bottom: 1px solid #d8d4d4;
     border-left: 1px solid #d8d4d4;
-    padding: 5px 2px 8px 4px;
+    padding: 6px 2px 9px 4px;
 }
 .ext-input .fa-bolt {
 	color: #54C3E8;
@@ -563,6 +563,7 @@ span.toggle {
 }
 .input-left {
     width: 50%;
+    padding-right: 14px;
 }
 .input-middle {
     width: 50%;
@@ -578,4 +579,20 @@ span.toggle {
     width: 60%;
 }
 
+}
+
+@media only screen and (max-width: 350px) {
+  .wrapper .logo {
+  	width: 100px;
+  	height: 60px;
+  }
+  .mobile-star {
+    left: 41%;
+}
+  .pl-10 {
+  	padding-left: 4px;
+  }
+  .input-km {
+    padding-right: 5px;
+}
 }
