@@ -7,7 +7,8 @@
 }
  body {
 	 background: #fff;
-	 line-height: 1.1
+	 line-height: 1.1;
+	 color: #4F4F4F;
 }
 a {
 	 text-decoration: none;
@@ -24,6 +25,7 @@ h6 {
 span {
 	font-size: 16px;
 }
+
 
 .pt-40 {
 	padding-top: 40px;
@@ -239,7 +241,7 @@ span {
  .right-body {
     width: 50%;
     padding: 0 20px 40px 20px;
-    background: grey;
+    background: #F0F0F0;
 }
 
  /*RIGHT BODY*/
@@ -248,16 +250,30 @@ span {
  }
  .top-heading-left {
  	width: 80%;
- 	padding-top: 50px;
+ 	padding: 50px 40px 0 0;
  }
-  .top-heading-right {
+ .top-heading-left h2 {
+	color: #54C3E8;
+}
+ .top-heading-left P {
+	padding-top: 20px;
+}
+.top-heading-right {
  	width: 20%;
  	text-align: center;
- 	background: #f3f3f3;
+ 	background: #54C3E8;
  	border-radius: 0 0px 14px 14px;
+ 	color: #fff;
  }
-
-
+.top-heading-right h2 {
+padding-bottom: 5px;
+}
+.input-all input {
+	margin-top: 8px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #d8d4d4;
+}
 .input-left {
 	width: 36%;
 	padding-right:20px;
@@ -269,9 +285,44 @@ span {
 .input-right {
 	width: 34%;
 }
-
+.input-right p {
+	padding-top: 14px;
+}
+.input-right i {
+	color: #54C3E8;
+}
+.ext-input {
+	padding-top: 8px;
+}
+.ext-input input {
+	height: 32px;
+    border-radius: 0px 4px 4px 0px;
+    border: 1px solid #d8d4d4;
+}
+.ext-input .fa-bolt {
+	border-top: 1px solid #d8d4d4;
+    border-bottom: 1px solid #d8d4d4;
+    border-left: 1px solid #d8d4d4;
+    padding: 5px 4px 8px 5px;
+}
+.ext-input i {
+	border-top: 1px solid #d8d4d4;
+    border-bottom: 1px solid #d8d4d4;
+    border-left: 1px solid #d8d4d4;
+    padding: 5px 2px 8px 4px;
+}
+.ext-input .fa-bolt {
+	color: #54C3E8;
+}
+.ext-input .fa-fire {
+	color: #EA2C2D;
+}
 .input-left input, .input-middle input {
 	width: 100%;
+}
+
+.sim-heading {
+	padding-top: 20px;
 }
 /*SWITCH*/
  .switch {
@@ -279,7 +330,7 @@ span {
   display: inline-block;
   width: 47px;
   height: 34px;
-  top: 6px;
+  top: 3px;
 }
 
 .switch input { 
@@ -313,11 +364,11 @@ span {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #54C3E8;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #54C3E8;
 }
 
 input:checked + .slider:before {
@@ -339,6 +390,7 @@ input:checked + .slider:before {
 
 .sim-heading a {
 	text-decoration: underline;
+	color: #A0A0A0;
 }
 
 .km-m {
@@ -356,8 +408,24 @@ input:checked + .slider:before {
 	margin: 40px 0 10px 0;
 	width: 100%;
 	height: 40px;
+	background: linear-gradient(to left, #54C3E8, #54C3E8);
+	border: 1px solid #54C3E8;
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 17px;
+	color: #fff;
 }
-
+.last a {
+	color: #4F4F4F;
+	text-decoration: underline;
+}
+.last i {
+	color: #51C075;
+	padding-left: 5px;
+}
+.dis-none {
+	display: none;
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -392,7 +460,7 @@ input:checked + .slider:before {
 		 text-align: left;
 	}
 	 .nav-menu li a {
-		 color: #fff;
+		 color: #000;
 	}
 	 .nav-menu .nav-item .item-dropdown {
 		 position: inherit;
@@ -416,4 +484,85 @@ input:checked + .slider:before {
 	.right-body {
 		width: 100%;
 	}
+
+	.first-col {
+		display: none;
+	}
+	.sec-col {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+	.col1-sec {
+    flex-wrap: wrap;
+    }
+    .col-line {
+    line-height: 0px;
+    text-align: center;
+    width: 100%;
+}
+    .coll-one {
+    padding-top: 2px;
+    text-align: center;
+    width: 100%;
+}
+.col-line i {
+    font-size: 20px;
+}
+.coll-one span {
+    font-size: 10px;
+}
+.col1 {
+	    height: 70px;
+    padding-top: 4px;
+    border-right: 1px solid #ffffff4d;
+}
+.col1:last-child {
+    border-right: 0;
+}
+.col1 {
+    margin-left: 0;
+    width: 33%;
+}
+.midlle-header {
+    display: none;
+}
+span.toggle {
+    background: #54C3E8;
+}
+.dis-none {
+	display: block;
+	font-size: 38px;
+	padding-bottom: 20px;
+	color: #f1f1f1;
+}
+.body {
+	padding: 25px 0;
+}
+.top-heading-right {
+    display: none;
+}
+.top-heading-left {
+    width: 100%;
+}
+.top-heading {
+    flex-wrap: wrap;
+}
+.input-left {
+    width: 50%;
+}
+.input-middle {
+    width: 50%;
+}
+.input-right {
+    width: 100%;
+    padding-top: 30px;
+}
+.sim-heading p {
+	font-size: 16px;
+}
+.ext-input input {
+    width: 60%;
+}
+
 }
